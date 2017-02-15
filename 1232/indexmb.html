@@ -1,0 +1,2095 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<!--德勤埋码 mobile-->
+<script id="GA_001">
+
+  //get cookie value with key
+  function getCookie(name){
+     var arr,reg=new RegExp("(^| )"+name+"=([^;]*)(;|$)");
+     if(arr=document.cookie.match(reg))
+        return unescape(arr[2]);
+     else
+        return null;
+  }
+  
+  //primary cookie key.
+  var Honda_CookieID = getCookie("SL_Layout_Cookie");//Honda CookieID
+  
+  var myDate = new Date();
+  var timeStr=myDate.getFullYear().toString()+(myDate.getMonth()+1).toString()+myDate.getDate();
+  var GA_CookieID_OrderID = timeStr+Honda_CookieID;//交易id
+
+  var Honda_adcode = "";
+  var reg = new RegExp("(^|&)"+ 'adcode' +"=([^&]*)(&|$)");
+  var r = window.location.search.substr(1).match(reg);
+  if(r!=null) Honda_adcode = unescape(r[2]);//Honda adcode
+
+  //001
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-90138428-1', 'auto');
+ga('set', 'dimension1', Honda_CookieID);
+ga('set', 'dimension4', Honda_adcode);
+var clientId = tracker.get('clientId');
+ga('set', 'dimension5', clientId);
+</script>
+
+
+<!--be in common use for mobile-->
+<script type="text/javascript" src="js/Official/common/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="/js/Official/common_v1.js"></script>
+<script type="text/javascript" src="/js/reserve.js"></script>
+<script type="text/javascript" src="/js/Official/shopping.js"></script>
+  
+
+<link rel="stylesheet" href="mobile/css/main.min.css">
+
+  <script type="text/javascript">
+    !(function(doc, win) {
+    var timer, docEle = doc.documentElement,
+    evt = "onorientationchange" in window ? "orientationchange": "resize",
+    setFontSize = function() {
+        var width = docEle.clientWidth;
+        var aaa = 640 / 10;
+        width && (docEle.style.fontSize = ((width / 640) * aaa) + "px");
+        win.aaa = ((width / 640) * aaa);
+    };
+    win.addEventListener(evt,
+    function() {
+        clearTimeout(timer);
+            timer = setTimeout(setFontSize, 200);
+        },false);
+        doc.addEventListener("DOMContentLoaded", setFontSize, false);
+    } (document, window));
+  </script>
+</head>
+<body>
+
+
+<div class="swiper-container swiper-container1">
+    <div class="swiper-wrapper">
+<!-- 第一屏开始 -->
+        <div class="swiper-slide s1">
+          <div class="slide-box">
+            <video src="http://www.ghac.cn/Layouts/Activity/2016/0617/video/accordhev.mp4" poster="mobile/images/s1/video.png" width="0" height="0" preload="none"></video>
+            <video src="http://www.ghac.cn/Layouts/Activity/2016/0617/video/accordhev2.mp4" poster="mobile/images/s1/video.png" width="0" height="0" preload="none"></video>
+            <a class="video1" href="javascript:;"></a>
+            <a class="video2" href="javascript:;"></a>
+            <!-- <div class="car"></div> -->
+          </div>
+          <a href="http://www.ghac.cn"><div class="logo"></div></a>
+          <div class="menu" data-active="0"></div>
+          <div class="layout">
+            <div class="down"></div>
+          </div>
+        </div>
+<!-- 第一屏开始结束 -->
+
+<!-- 第二屏开始 -->
+        <div class="swiper-slide s2-1">
+          <div class="slide-box">
+            <div class="car">
+              <div class="point" data-dialog='type:p2-1;number:3;initNumber:3;bol:true'>
+                <i class="po small" data-dialog='type:p2-1;number:3;initNumber:3;bol:true'></i>
+              </div>
+<!--               <div class="point">
+                <i class="po small"></i>
+              </div> -->
+              <div class="point" data-dialog='type:p2-1;number:3;initNumber:1;bol:true;bool:true'>
+                <i class="po big" data-dialog='type:p2-1;number:3;initNumber:1;bol:true;bool:true'></i>
+              </div>
+              <div class="point" data-dialog='type:p2-1;number:3;initNumber:2;bol:true'>
+                <i class="po small" data-dialog='type:p2-1;number:3;initNumber:2;bol:true'></i>
+              </div>
+            </div>
+            <div class="title"></div>
+          </div>
+          <div class="logo"></div>
+          <div class="menu" data-active="1"></div>
+          <div class="layout">
+            <div class="down"></div>
+          </div>
+        </div>
+        <!--第二屏结束-->
+        <!--第二屏 第二页 开始-->
+          <div class="swiper-slide s2-2">
+            <div class="slide-box">
+              <div class="title"></div>
+              <div class="swiper-xingshi">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="mobile/images/s2-2/1.png" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="mobile/images/s2-2/2.png" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="mobile/images/s2-2/3.png" alt="">
+                  </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+            </div>
+            <div class="logo"></div>
+            <div class="menu" data-active="1"></div>
+            <div class="layout">
+              <div class="down"></div>
+            </div>
+          </div>
+          <!--第二屏 第二页 结束-->
+          <!--第二屏 第三页 开始-->
+        <script id="page4" type="text/template">
+          <div class="swiper-slide s2-3">
+            <div class="slide-box">
+              <div class="title"></div>
+              <div class="content"></div>
+            </div>
+            <div class="logo"></div>
+            <div class="menu" data-active="1"></div>
+            <div class="layout">
+              <div class="down"></div>
+            </div>
+          </div>
+        </script>
+        <!--第二屏 第三页 结束-->
+        <!--第二屏 第四页 开始-->
+        <script id="page5" type="text/template">
+          <div class="swiper-slide s2-4">
+            <div class="slide-box">
+              <div class="title"></div>
+              <div class="car">
+                <div class="point">
+                  <i class="po small"></i>
+                </div>
+                <div class="point" data-dialog='type:p2-4;number:2;initNumber:1;bol:true;bool:true'>
+                  <i class="po big" data-dialog='type:p2-4;number:2;initNumber:1;bol:true;bool:true'></i>
+                </div>
+                <div class="point">
+                  <i class="po small"></i>
+                </div>
+                <div class="point">
+                  <i class="po small"></i>
+                </div>
+                <div class="point" data-dialog='type:p2-4;number:2;initNumber:2;bol:true'>
+                  <i class="po small" data-dialog='type:p2-4;number:2;initNumber:2;bol:true'></i>
+                </div>
+              </div>
+            </div>
+            <div class="logo"></div>
+            <div class="menu" data-active="1"></div>
+            <div class="layout">
+              <div class="down"></div>
+            </div>
+          </div>
+        </script>
+        <!--第二屏 第四页 结束-->
+        <!--第三屏  开始-->
+        <script id="page6" type="text/template">
+          <div class="swiper-slide s3">
+            <div class="slide-box">
+              <div class="title"></div>
+              <div class="car">
+                <div class="point" data-dialog='type:p3;number:8;initNumber:5;bol:true'>
+                  <i class="po big" data-dialog='type:p3;number:8;initNumber:5;bol:true'></i>
+                </div>
+                <div class="point" data-dialog='type:p3;number:8;initNumber:1;bol:true;bool:true'>
+                  <i class="po big" data-dialog='type:p3;number:8;initNumber:1;bol:true;bool:true'></i>
+                </div>
+                <div class="point" data-dialog='type:p3;number:8;initNumber:2;bol:true'>
+                  <i class="po small" data-dialog='type:p3;number:8;initNumber:2;bol:true'></i>
+                </div>
+                <div class="point" data-dialog='type:p3;number:8;initNumber:4;bol:true'>
+                  <i class="po small" data-dialog='type:p3;number:8;initNumber:4;bol:true'></i>
+                </div>
+                <div class="point" data-dialog='type:p3;number:8;initNumber:7;bol:true'>
+                  <i class="po small" data-dialog='type:p3;number:8;initNumber:7;bol:true'></i>
+                </div>
+              </div>
+            </div>
+            <div class="logo"></div>
+            <div class="menu" data-active="2"></div>
+            <div class="layout">
+              <div class="down"></div>
+            </div>
+          </div>
+        </script>
+        <!--第三屏结束-->
+        <!--第四屏开始-->
+        <script id="page7" type="text/template">
+          <div class="swiper-slide s4">
+            <div class="title"></div>
+            <div class="slide-box">
+              <div class="sssss">
+                <div class="point2 point" data-dialog='type:p4;number:8;initNumber:5;bol:true'>
+                  <i class="po small" data-dialog='type:p4;number:8;initNumber:5;bol:true'></i>
+                </div>
+                <div class="point4 point" data-dialog='type:p4;number:8;initNumber:4;bol:true'>
+                  <i class="po small" data-dialog='type:p4;number:8;initNumber:4;bol:true'></i>
+                </div>
+              </div>
+              <div class="iiiii">
+                <div class="point1 point" data-dialog='type:p4;number:8;initNumber:3;bol:true'>
+                  <i class="po big"  data-dialog='type:p4;number:8;initNumber:3;bol:true'></i>
+                </div>
+                <div class="point3 point" data-dialog='type:p4;number:8;initNumber:1;bol:true;bool:true'>
+                  <i class="po small" data-dialog='type:p4;number:8;initNumber:1;bol:true;bool:true'></i>
+                </div>
+              </div>
+            </div>
+            <div class="logo"></div>
+            <div class="menu" data-active="3"></div>
+            <div class="layout">
+              <div class="down"></div>
+            </div>
+          </div>
+        </script>
+        <!--第四屏结束-->
+        <!--第五屏开始-->
+        <script id="page8" type="text/template">
+        <div class="swiper-slide s5">
+          <div class="slide-box">
+            <div class="title">
+              <a class="gotoinfo" href="http://www.ghac.cn/Layouts/Activity/2016/0928/accord-sporthybrid"></a>
+            </div>
+            <div class="swiper-peizhi">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide" data="s5_1">
+                  <img src="mobile/images/s5/1.png" alt="" onclick="javascript:ga('send', 'event', '201609-accordsporthybrid', 'Configuration', 'Cool',     {'dimension3': 'accord-sporthybrid', 'metric6': 1}); ">
+                </div>
+                <div class="swiper-slide" data="s5_2">
+                  <img src="mobile/images/s5/2.png" alt="" onclick="javascript:ga('send', 'event', '201609-accordsporthybrid', 'Configuration', 'Lead',     {'dimension3': 'accord-sporthybrid', 'metric6': 1}); ">
+                </div>
+                <div class="swiper-slide" data="s5_3">
+                  <img src="mobile/images/s5/3.png" alt="" onclick="javascript:ga('send', 'event', '201609-accordsporthybrid', 'Configuration', 'Honor',     {'dimension3': 'accord-sporthybrid', 'metric6': 1}); ">
+                </div>
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+            <div class="config-wrapper">
+              <!-- 型号选择 -->
+              <div class="xinghao-select">
+                <!-- 型号展示 -->
+                <div class="xinghao-show">
+                  <p class="cur" id="curXinghao">锐酷版</p>
+                  <div class="item" id="xinghao-item">
+                    <p  onclick="javascript:ga('send', 'event', '201609-accordsporthybrid', 'Configuration', 'Cool',     {'dimension3': 'accord-sporthybrid', 'metric6': 1});" >锐酷版</p>
+                    <p onclick="javascript:ga('send', 'event', '201609-accordsporthybrid', 'Configuration', 'Lead',     {'dimension3': 'accord-sporthybrid', 'metric6': 1});">锐领版</p>
+                    <p onclick="javascript:ga('send', 'event', '201609-accordsporthybrid', 'Configuration', 'Honor',     {'dimension3': 'accord-sporthybrid', 'metric6': 1});">锐尊版</p>
+                  </div>
+                </div>
+                <!-- btn -->
+                <div class="xinghao-btn" id="xinghao-btn">
+                  <a href="javascript:;">更多车型<i class="arrow"></i></a>
+                </div>
+              </div>
+              <!-- 型号选择end -->
+              <!-- table -->
+              <div class="tab-scroll tab-scroll1" id="tab-scroll">
+                <!-- 锐酷版  -->
+                <div class="tab-item swiper-no-swiping">
+                  <table cellspacing="0" cellpadding="0">
+                     <tr>
+                       <td colspan="2">车身参数</td>
+                     </tr>
+                     <tr>
+                       <td>长*宽*高（mm）</td>
+                       <td>4915ⅹ1845ⅹ1470</td>
+                     </tr>
+                     <tr>
+                       <td>轴距（mm）</td>
+                       <td>2775</td>
+                     </tr>
+                     <tr>
+                       <td>前/后轮距（mm）</td>
+                       <td>1585/1580</td>
+                     </tr>
+                     <tr>
+                       <td>轮辋尺寸</td>
+                       <td>17x7.5J 铝质</td>
+                     </tr>
+                     <tr>
+                       <td>轮胎尺寸</td>
+                       <td>225/50 R17 94V</td>
+                     </tr>
+                     <tr>
+                       <td>最小转弯半径（m）</td>
+                       <td>≤5.8</td>
+                     </tr>
+                     <tr>
+                       <td>最小离地间隙（mm）</td>
+                       <td>≥95（满载）</td>
+                     </tr>
+                     <tr>
+                       <td>油箱容积（L）</td>
+                       <td>60</td>
+                     </tr>
+                     <tr>
+                       <td>整备质量（kg)</td>
+                       <td>1640</td>
+                     </tr>
+                     <tr>
+                       <td colspan="2">SPORT HYBRID 锐·混动 动力性能</td>
+                     </tr>
+                     <tr>
+                       <td>发动机类型</td>
+                       <td>2.0L 阿特金森循环/DOHC/i-VTEC</td>
+                     </tr>
+                     <tr>
+                       <td>排气量（cc）</td>
+                       <td>1993</td>
+                     </tr>
+                     <tr>
+                       <td>压缩比</td>
+                       <td>13.0:1</td>
+                     </tr>
+                     <tr>
+                       <td>发动机最大功率（kW/rpm）</td>
+                       <td>107/6200</td>
+                     </tr>
+                     <tr>
+                       <td>发动机最大扭矩（N·m/rpm）</td>
+                       <td>175/4000</td>
+                     </tr>
+                     <tr>
+                       <td>驱动电机最大功率（kW）</td>
+                       <td>135</td>
+                     </tr>
+                     <tr>
+                       <td>驱动电机最大扭矩（N·m）</td>
+                       <td>315</td>
+                     </tr>
+
+                     <tr>
+                       <td>i-MMD混合动力形式</td>
+                       <td>切换式</td>
+                     </tr>
+                     <tr>
+                       <td>综合最大功率（kW）</td>
+                       <td>158</td>
+                     </tr>
+                     <tr>
+                       <td>90km/h等速油耗（L/100km）</td>
+                       <td>≤5.2</td>
+                     </tr>
+                     <tr>
+                       <td>综合工况油耗（L/100km）*</td>
+                       <td>4.2</td>
+                     </tr>
+                     <tr>
+                       <td>i-MMD混合动力电池类型</td>
+                       <td>锂离子动力蓄电池</td>
+                     </tr>
+                     <tr>
+                       <td>动力蓄电池数量（个）</td>
+                       <td>72</td>
+                     </tr>
+                     <tr>
+                       <td>额定容量（Ah）（单体电池）</td>
+                       <td>4.25</td>
+                     </tr>
+                     <tr>
+                       <td>变速器</td>
+                       <td>E-CVT</td>
+                     </tr>
+                     <tr>
+                       <td>DBW电子油门驱动装置</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>排放标准</td>
+                       <td>国Ⅴ</td>
+                     </tr>
+                     <tr>
+                       <td>驱动方式</td>
+                       <td>前轮驱动</td>
+                     </tr>
+                     <tr>
+                       <td>ECON智能绿色节能辅助系统</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td colspan="2">悬挂/制动/转向系统</td>
+                     </tr>
+                     <tr>
+                       <td>悬挂系统（前/后）</td>
+                       <td>前麦弗逊独立悬挂/后多连杆独立悬挂</td>
+                     </tr>
+                     <tr>
+                       <td>制动系统（前/后）</td>
+                       <td>盘式/盘式</td>
+                     </tr>
+                     <tr>
+                       <td>制动回路</td>
+                       <td>交叉式双回路</td>
+                     </tr>
+                     <tr>
+                       <td>转向系统</td>
+                       <td>EPS电子助力转向系统</td>
+                     </tr>
+                     <tr>
+                       <td colspan="2">安全系统</td>
+                     </tr>
+                     <tr>
+                       <td>ACE高级兼容性车身结构</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>车门内置防侧撞保护杆</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>ABS防抱死制动系统</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>EBD电子制动力分配系统</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>VSA车辆稳定性控制系统</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>HSA斜坡启动辅助系统</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>ESS紧急刹车警示辅助系统</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>EPB电子驻车制动系统</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>ABH自动驻车系统</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>TPMS胎压监测系统</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>定速巡航系统</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>前排i-SRS双安全气囊</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>前排侧安全气囊</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>侧安全气帘</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>豪华广角后视摄像显示系统</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>预紧式前排座椅三点式安全带</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>后排座椅三点式ELR安全带</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>儿童安全门锁</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>ISO FIX 儿童座椅固定装置</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>智能防盗启动锁止系统</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>防盗报警系统</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td colspan="2">Honda SENSING 安全超感</td>
+                     </tr>
+                     <tr>
+                       <td>带LSF（低速前车跟随系统）的ACC主动巡航控制系统</td>
+                       <td>-</td>
+                     </tr>
+                     <tr>
+                       <td>CMBS碰撞缓解制动系统</td>
+                       <td>-</td>
+                     </tr>
+                     <tr>
+                       <td>LKAS车道保持辅助系统</td>
+                       <td>-</td>
+                     </tr>
+                     <tr>
+                       <td>RDM车道偏移抑制系统</td>
+                       <td>-</td>
+                     </tr>
+                     <tr>
+                       <td>TSR交通标识智能识别</td>
+                       <td>-</td>
+                     </tr>
+                     <tr>
+                       <td>PSS车身一体式泊车雷达（前4后4式8探头）</td>
+                       <td>-</td>
+                     </tr>
+                     <tr>
+                       <td>LWC盲点显示系统</td>
+                       <td>-</td>
+                     </tr>
+                     <tr>
+                       <td colspan="2">外观</td>
+                     </tr>
+                     <tr>
+                       <td>羽翼式LED前大灯</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>ACL主动转向照明系统</td>
+                       <td>-</td>
+                     </tr>
+                     <tr>
+                       <td>前大灯高度自动调节</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>动感LED前转向灯</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>动感LED日间行车灯</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>LED前雾灯</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>光纤式LED组合尾灯</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>LED高位刹车灯</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>电动折叠外后视镜（带转向灯）</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>外后视镜带加热功能</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>外后视镜倒车辅助功能</td>
+                       <td>-</td>
+                     </tr>
+                     <tr>
+                       <td>防眩目内后视镜</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>自动防眩目内后视镜</td>
+                       <td>-</td>
+                     </tr>
+                     <tr>
+                       <td>豪华电动天窗</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>全车车窗一键式升降/防夹</td>
+                       <td>-</td>
+                     </tr>
+                     <tr>
+                       <td>驾驶席车窗一键式升降/防夹</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>多级式前挡风玻璃雨刮器</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>雨量感应式雨刮器</td>
+                       <td>-</td>
+                     </tr>
+                     <tr>
+                       <td>豪华动感前中网</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>混合动力专属动感尾翼</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td colspan="2">内饰</td>
+                     </tr>
+                     <tr>
+                       <td>高级真皮座椅</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>真皮方向盘</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>双区自动空调</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>后排空调出风口</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>前排座椅中央扶手箱</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>后排座椅中央扶手</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>前排电加热座椅</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>后排电加热座椅</td>
+                       <td>-</td>
+                     </tr>
+                     <tr>
+                       <td>前排通风座椅</td>
+                       <td>-</td>
+                     </tr>
+                     <tr>
+                       <td>驾驶席10向电动调节（8向电动座椅+2向电动腰靠）</td>
+                       <td>-</td>
+                     </tr>
+                     <tr>
+                       <td>驾驶席8向电动调节</td>
+                       <td>-</td>
+                     </tr>
+                     <tr>
+                       <td>驾驶席6向手动调节</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>驾驶席座椅带记忆功能</td>
+                       <td>-</td>
+                     </tr>
+                     <tr>
+                       <td>副驾驶席8向电动调节</td>
+                       <td>-</td>
+                     </tr>
+                     <tr>
+                       <td>副驾驶席4向电动调节</td>
+                       <td>-</td>
+                     </tr>
+                     <tr>
+                       <td>前排遮阳板带照明灯</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>后排侧窗遮阳帘</td>
+                       <td>-</td>
+                     </tr>
+                     <tr>
+                       <td>后挡风玻璃遮阳帘</td>
+                       <td>-</td>
+                     </tr>
+                     <tr>
+                       <td>地图灯</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>阅读灯</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>手套箱灯</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>车内氛围灯</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>前排脚部氛围灯</td>
+                       <td>-</td>
+                     </tr>
+                     <tr>
+                       <td colspan="2">舒适及便利装置</td>
+                     </tr>
+                     <tr>
+                       <td>SBW电子换档</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>等离子空气净化器</td>
+                       <td>-</td>
+                     </tr>
+                     <tr>
+                       <td>ANC主动降噪系统</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>单向远程发动机启动系统（同步开启空调）</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>Smart Entry智能无匙进入系统</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>一键启动系统</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>后行李箱智能开启</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>前排中央控制门锁</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>驾驶员信息系统</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td colspan="2">娱乐系统</td>
+                     </tr>
+                     <tr>
+                       <td>单碟CD音响系统</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>豪华7英寸彩色智能屏互联系统（蓝牙/手机导航/音乐功能）</td>
+                       <td>-</td>
+                     </tr>
+                     <tr>
+                       <td>8英寸彩色多用途信息显示系统</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>7.7英寸彩色多用途信息显示系统</td>
+                       <td>-</td>
+                     </tr>
+                     <tr>
+                       <td>Apple CarPlay</td>
+                       <td>-</td>
+                     </tr>
+                     <tr>
+                       <td>Honda CONNECT智导互联</td>
+                       <td>-</td>
+                     </tr>
+                     <tr>
+                       <td>Wi-Fi热点连接</td>
+                       <td>-</td>
+                     </tr>
+                     <tr>
+                       <td>环绕立体声高级音响系统</td>
+                       <td>-</td>
+                     </tr>
+                     <tr>
+                       <td>6扬声器高保真立体音响</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>7扬声器高保真立体音响</td>
+                       <td>-</td>
+                     </tr>
+                     <tr>
+                       <td>USB+AUX接口</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>后排USB充电接口</td>
+                       <td>-</td>
+                     </tr>
+                     <tr>
+                       <td>USB+HDMI接口</td>
+                       <td>-</td>
+                     </tr>
+                     <tr>
+                       <td>MP3/WMA播放器</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>i-Pod播放功能（USB连接）</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td colspan="2" style="text-align: center;">— 无此配置 ● 标准配置</td>
+                     </tr>
+                     <tr>
+                       <td colspan="2">备注：“●”表示装备、“-”表示未装备。*实际行驶油耗根据不同的燃油品质、道路状况和驾驶条件而定。</td>
+                     </tr>
+                     <tr>
+                       <td colspan="2">声明：本产品样本的全部内容，请以实车为准，广汽本田汽车有限公司保留最终解释权和修改权。</td>
+                     </tr>
+                  </table>
+                </div>
+                <!-- 锐酷版 end -->
+              </div>
+              <div class="tab-scroll tab-scroll2" id="tab-scroll">
+                <!-- 锐领版  -->
+                <div class="tab-item swiper-no-swiping">
+                  <table cellspacing="0" cellpadding="0">
+                     <tr>
+                       <td colspan="2">车身参数</td>
+                     </tr>
+                     <tr>
+                       <td>长*宽*高（mm）</td>
+                       <td>4915ⅹ1845ⅹ1470</td>
+                     </tr>
+                     <tr>
+                       <td>轴距（mm）</td>
+                       <td>2775</td>
+                     </tr>
+                     <tr>
+                       <td>前/后轮距（mm）</td>
+                       <td>1585/1585</td>
+                     </tr>
+                     <tr>
+                       <td>轮辋尺寸</td>
+                       <td>18ⅹ8J 铝质</td>
+                     </tr>
+                     <tr>
+                       <td>轮胎尺寸</td>
+                       <td>235/45 R18 94W</td>
+                     </tr>
+                     <tr>
+                       <td>最小转弯半径（m）</td>
+                       <td>≤6.0</td>
+                     </tr>
+                     <tr>
+                       <td>最小离地间隙（mm）</td>
+                       <td>≥95（满载）</td>
+                     </tr>
+                     <tr>
+                       <td>油箱容积（L）</td>
+                       <td>60</td>
+                     </tr>
+                     <tr>
+                       <td>整备质量（kg)</td>
+                       <td>1667</td>
+                     </tr>
+                     <tr>
+                       <td colspan="2">SPORT HYBRID 锐·混动 动力性能</td>
+                     </tr>
+                     <tr>
+                       <td>发动机类型</td>
+                       <td>2.0L 阿特金森循环/DOHC/i-VTEC</td>
+                     </tr>
+                     <tr>
+                       <td>排气量（cc）</td>
+                       <td>1993</td>
+                     </tr>
+                     <tr>
+                       <td>压缩比</td>
+                       <td>13.0:1</td>
+                     </tr>
+                     <tr>
+                       <td>发动机最大功率（kW/rpm）</td>
+                       <td>107/6200</td>
+                     </tr>
+                     <tr>
+                       <td>发动机最大扭矩（N·m/rpm）</td>
+                       <td>175/4000</td>
+                     </tr>
+                     <tr>
+                       <td>驱动电机最大功率（kW）</td>
+                       <td>135</td>
+                     </tr>
+                     <tr>
+                       <td>驱动电机最大扭矩（N·m）</td>
+                       <td>315</td>
+                     </tr>
+
+                     <tr>
+                       <td>i-MMD混合动力形式</td>
+                       <td>切换式</td>
+                     </tr>
+                     <tr>
+                       <td>综合最大功率（kW）</td>
+                       <td>158</td>
+                     </tr>
+                     <tr>
+                       <td>90km/h等速油耗（L/100km）</td>
+                       <td>≤5.2</td>
+                     </tr>
+                     <tr>
+                       <td>综合工况油耗（L/100km）*</td>
+                       <td>4.4</td>
+                     </tr>
+                     <tr>
+                       <td>i-MMD混合动力电池类型</td>
+                       <td>锂离子动力蓄电池</td>
+                     </tr>
+                     <tr>
+                       <td>动力蓄电池数量（个）</td>
+                       <td>72</td>
+                     </tr>
+                     <tr>
+                       <td>额定容量（Ah）（单体电池）</td>
+                       <td>4.25</td>
+                     </tr>
+                     <tr>
+                       <td>变速器</td>
+                       <td>E-CVT</td>
+                     </tr>
+                     <tr>
+                       <td>DBW电子油门驱动装置</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>排放标准</td>
+                       <td>国Ⅴ</td>
+                     </tr>
+                     <tr>
+                       <td>驱动方式</td>
+                       <td>前轮驱动</td>
+                     </tr>
+                     <tr>
+                       <td>ECON智能绿色节能辅助系统</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td colspan="2">悬挂/制动/转向系统</td>
+                     </tr>
+                     <tr>
+                       <td>悬挂系统（前/后）</td>
+                       <td>前麦弗逊独立悬挂/后多连杆独立悬挂</td>
+                     </tr>
+                     <tr>
+                       <td>制动系统（前/后）</td>
+                       <td>盘式/盘式</td>
+                     </tr>
+                     <tr>
+                       <td>制动回路</td>
+                       <td>交叉式双回路</td>
+                     </tr>
+                     <tr>
+                       <td>转向系统</td>
+                       <td>EPS电子助力转向系统</td>
+                     </tr>
+                     <tr>
+                       <td colspan="2">安全系统</td>
+                     </tr>
+                     <tr>
+                       <td>ACE高级兼容性车身结构</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>车门内置防侧撞保护杆</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>ABS防抱死制动系统</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>EBD电子制动力分配系统</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>VSA车辆稳定性控制系统</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>HSA斜坡启动辅助系统</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>ESS紧急刹车警示辅助系统</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>EPB电子驻车制动系统</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>ABH自动驻车系统</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>TPMS胎压监测系统</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>定速巡航系统</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>前排i-SRS双安全气囊</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>前排侧安全气囊</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>侧安全气帘</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>豪华广角后视摄像显示系统</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>预紧式前排座椅三点式安全带</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>后排座椅三点式ELR安全带</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>儿童安全门锁</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>ISO FIX 儿童座椅固定装置</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>智能防盗启动锁止系统</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>防盗报警系统</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td colspan="2">Honda SENSING 安全超感</td>
+                     </tr>
+                     <tr>
+                       <td>带LSF（低速前车跟随系统）的ACC主动巡航控制系统</td>
+                       <td>-</td>
+                     </tr>
+                     <tr>
+                       <td>CMBS碰撞缓解制动系统</td>
+                       <td>-</td>
+                     </tr>
+                     <tr>
+                       <td>LKAS车道保持辅助系统</td>
+                       <td>-</td>
+                     </tr>
+                     <tr>
+                       <td>RDM车道偏移抑制系统</td>
+                       <td>-</td>
+                     </tr>
+                     <tr>
+                       <td>TSR交通标识智能识别</td>
+                       <td>-</td>
+                     </tr>
+                     <tr>
+                       <td>PSS车身一体式泊车雷达（前4后4式8探头）</td>
+                       <td>-</td>
+                     </tr>
+                     <tr>
+                       <td>LWC盲点显示系统</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td colspan="2">外观</td>
+                     </tr>
+                     <tr>
+                       <td>羽翼式LED前大灯</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>ACL主动转向照明系统</td>
+                       <td>-</td>
+                     </tr>
+                     <tr>
+                       <td>前大灯高度自动调节</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>动感LED前转向灯</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>动感LED日间行车灯</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>LED前雾灯</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>光纤式LED组合尾灯</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>LED高位刹车灯</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>电动折叠外后视镜（带转向灯）</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>外后视镜带加热功能</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>外后视镜倒车辅助功能</td>
+                       <td>-</td>
+                     </tr>
+                     <tr>
+                       <td>防眩目内后视镜</td>
+                       <td>-</td>
+                     </tr>
+                     <tr>
+                       <td>自动防眩目内后视镜</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>豪华电动天窗</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>全车车窗一键式升降/防夹</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>驾驶席车窗一键式升降/防夹</td>
+                       <td>-</td>
+                     </tr>
+                     <tr>
+                       <td>多级式前挡风玻璃雨刮器</td>
+                       <td>-</td>
+                     </tr>
+                     <tr>
+                       <td>雨量感应式雨刮器</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>豪华动感前中网</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>混合动力专属动感尾翼</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td colspan="2">内饰</td>
+                     </tr>
+                     <tr>
+                       <td>高级真皮座椅</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>真皮方向盘</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>双区自动空调</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>后排空调出风口</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>前排座椅中央扶手箱</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>后排座椅中央扶手</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>前排电加热座椅</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>后排电加热座椅</td>
+                       <td>-</td>
+                     </tr>
+                     <tr>
+                       <td>前排通风座椅</td>
+                       <td>-</td>
+                     </tr>
+                     <tr>
+                       <td>驾驶席10向电动调节（8向电动座椅+2向电动腰靠）</td>
+                       <td>-</td>
+                     </tr>
+                     <tr>
+                       <td>驾驶席8向电动调节</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>驾驶席6向手动调节</td>
+                       <td>-</td>
+                     </tr>
+                     <tr>
+                       <td>驾驶席座椅带记忆功能</td>
+                       <td>-</td>
+                     </tr>
+                     <tr>
+                       <td>副驾驶席8向电动调节</td>
+                       <td>-</td>
+                     </tr>
+                     <tr>
+                       <td>副驾驶席4向电动调节</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>前排遮阳板带照明灯</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>后排侧窗遮阳帘</td>
+                       <td>-</td>
+                     </tr>
+                     <tr>
+                       <td>后挡风玻璃遮阳帘</td>
+                       <td>-</td>
+                     </tr>
+                     <tr>
+                       <td>地图灯</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>阅读灯</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>手套箱灯</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>车内氛围灯</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>前排脚部氛围灯</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td colspan="2">舒适及便利装置</td>
+                     </tr>
+                     <tr>
+                       <td>SBW电子换档</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>等离子空气净化器</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>ANC主动降噪系统</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>单向远程发动机启动系统（同步开启空调）</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>Smart Entry智能无匙进入系统</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>一键启动系统</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>后行李箱智能开启</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>前排中央控制门锁</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>驾驶员信息系统</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td colspan="2">娱乐系统</td>
+                     </tr>
+                     <tr>
+                       <td>单碟CD音响系统</td>
+                       <td>-</td>
+                     </tr>
+                     <tr>
+                       <td>豪华7英寸彩色智能屏互联系统（蓝牙/手机导航/音乐功能）</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>8英寸彩色多用途信息显示系统</td>
+                       <td>-</td>
+                     </tr>
+                     <tr>
+                       <td>7.7英寸彩色多用途信息显示系统</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>Apple CarPlay</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>Honda CONNECT智导互联</td>
+                       <td>-</td>
+                     </tr>
+                     <tr>
+                       <td>Wi-Fi热点连接</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>环绕立体声高级音响系统</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>6扬声器高保真立体音响</td>
+                       <td>-</td>
+                     </tr>
+                     <tr>
+                       <td>7扬声器高保真立体音响</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>USB+AUX接口</td>
+                       <td>-</td>
+                     </tr>
+                     <tr>
+                       <td>后排USB充电接口</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>USB+HDMI接口</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>MP3/WMA播放器</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>i-Pod播放功能（USB连接）</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td colspan="2" style="text-align: center;">— 无此配置 ● 标准配置</td>
+                     </tr>
+                     <tr>
+                       <td colspan="2">备注：“●”表示装备、“-”表示未装备。*实际行驶油耗根据不同的燃油品质、道路状况和驾驶条件而定。</td>
+                     </tr>
+                     <tr>
+                       <td colspan="2">声明：本产品样本的全部内容，请以实车为准，广汽本田汽车有限公司保留最终解释权和修改权。</td>
+                     </tr>
+                  </table>
+                </div>
+                <!-- 锐领版 end -->
+              </div>
+              <div class="tab-scroll tab-scroll3" id="tab-scroll">
+                <!-- 锐尊版  -->
+                <div class="tab-item swiper-no-swiping">
+                  <table cellspacing="0" cellpadding="0">
+                     <tr>
+                       <td colspan="2">车身参数</td>
+                     </tr>
+                     <tr>
+                       <td>长*宽*高（mm）</td>
+                       <td>4915ⅹ1845ⅹ1470</td>
+                     </tr>
+                     <tr>
+                       <td>轴距（mm）</td>
+                       <td>2775</td>
+                     </tr>
+                     <tr>
+                       <td>前/后轮距（mm）</td>
+                       <td>1585/1585</td>
+                     </tr>
+                     <tr>
+                       <td>轮辋尺寸</td>
+                       <td>18ⅹ8J 铝质</td>
+                     </tr>
+                     <tr>
+                       <td>轮胎尺寸</td>
+                       <td>235/45 R18 94W</td>
+                     </tr>
+                     <tr>
+                       <td>最小转弯半径（m）</td>
+                       <td>≤6.0</td>
+                     </tr>
+                     <tr>
+                       <td>最小离地间隙（mm）</td>
+                       <td>≥95（满载）</td>
+                     </tr>
+                     <tr>
+                       <td>油箱容积（L）</td>
+                       <td>60</td>
+                     </tr>
+                     <tr>
+                       <td>整备质量（kg)</td>
+                       <td>1677</td>
+                     </tr>
+                     <tr>
+                       <td colspan="2">SPORT HYBRID 锐·混动 动力性能</td>
+                     </tr>
+                     <tr>
+                       <td>发动机类型</td>
+                       <td>2.0L 阿特金森循环/DOHC/i-VTEC</td>
+                     </tr>
+                     <tr>
+                       <td>排气量（cc）</td>
+                       <td>1993</td>
+                     </tr>
+                     <tr>
+                       <td>压缩比</td>
+                       <td>13.0:1</td>
+                     </tr>
+                     <tr>
+                       <td>发动机最大功率（kW/rpm）</td>
+                       <td>107/6200</td>
+                     </tr>
+                     <tr>
+                       <td>发动机最大扭矩（N·m/rpm）</td>
+                       <td>175/4000</td>
+                     </tr>
+                     <tr>
+                       <td>驱动电机最大功率（kW）</td>
+                       <td>135</td>
+                     </tr>
+                     <tr>
+                       <td>驱动电机最大扭矩（N·m）</td>
+                       <td>315</td>
+                     </tr>
+
+                     <tr>
+                       <td>i-MMD混合动力形式</td>
+                       <td>切换式</td>
+                     </tr>
+                     <tr>
+                       <td>综合最大功率（kW）</td>
+                       <td>158</td>
+                     </tr>
+                     <tr>
+                       <td>90km/h等速油耗（L/100km）</td>
+                       <td>≤5.2</td>
+                     </tr>
+                     <tr>
+                       <td>综合工况油耗（L/100km）*</td>
+                       <td>4.4</td>
+                     </tr>
+                     <tr>
+                       <td>i-MMD混合动力电池类型</td>
+                       <td>锂离子动力蓄电池</td>
+                     </tr>
+                     <tr>
+                       <td>动力蓄电池数量（个）</td>
+                       <td>72</td>
+                     </tr>
+                     <tr>
+                       <td>额定容量（Ah）（单体电池）</td>
+                       <td>4.25</td>
+                     </tr>
+                     <tr>
+                       <td>变速器</td>
+                       <td>E-CVT</td>
+                     </tr>
+                     <tr>
+                       <td>DBW电子油门驱动装置</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>排放标准</td>
+                       <td>国Ⅴ</td>
+                     </tr>
+                     <tr>
+                       <td>驱动方式</td>
+                       <td>前轮驱动</td>
+                     </tr>
+                     <tr>
+                       <td>ECON智能绿色节能辅助系统</td>
+                       <td>●</td>
+                     </tr>
+                     <tr colspan="2">
+                       <td>悬挂/制动/转向系统</td>
+                     </tr>
+                     <tr>
+                       <td>悬挂系统（前/后）</td>
+                       <td>前麦弗逊独立悬挂/后多连杆独立悬挂</td>
+                     </tr>
+                     <tr>
+                       <td>制动系统（前/后）</td>
+                       <td>盘式/盘式</td>
+                     </tr>
+                     <tr>
+                       <td>制动回路</td>
+                       <td>交叉式双回路</td>
+                     </tr>
+                     <tr>
+                       <td>转向系统</td>
+                       <td>EPS电子助力转向系统</td>
+                     </tr>
+                     <tr>
+                       <td colspan="2">安全系统</td>
+                     </tr>
+                     <tr>
+                       <td>ACE高级兼容性车身结构</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>车门内置防侧撞保护杆</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>ABS防抱死制动系统</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>EBD电子制动力分配系统</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>VSA车辆稳定性控制系统</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>HSA斜坡启动辅助系统</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>ESS紧急刹车警示辅助系统</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>EPB电子驻车制动系统</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>ABH自动驻车系统</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>TPMS胎压监测系统</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>定速巡航系统</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>前排i-SRS双安全气囊</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>前排侧安全气囊</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>侧安全气帘</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>豪华广角后视摄像显示系统</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>预紧式前排座椅三点式安全带</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>后排座椅三点式ELR安全带</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>儿童安全门锁</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>ISO FIX 儿童座椅固定装置</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>智能防盗启动锁止系统</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>防盗报警系统</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td colspan="2">Honda SENSING 安全超感</td>
+                     </tr>
+                     <tr>
+                       <td>带LSF（低速前车跟随系统）的ACC主动巡航控制系统</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>CMBS碰撞缓解制动系统</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>LKAS车道保持辅助系统</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>RDM车道偏移抑制系统</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>TSR交通标识智能识别</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>PSS车身一体式泊车雷达（前4后4式8探头）</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>LWC盲点显示系统</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td colspan="2">外观</td>
+                     </tr>
+                     <tr>
+                       <td>羽翼式LED前大灯</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>ACL主动转向照明系统</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>前大灯高度自动调节</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>动感LED前转向灯</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>动感LED日间行车灯</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>LED前雾灯</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>光纤式LED组合尾灯</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>LED高位刹车灯</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>电动折叠外后视镜（带转向灯）</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>外后视镜带加热功能</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>外后视镜倒车辅助功能</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>防眩目内后视镜</td>
+                       <td>-</td>
+                     </tr>
+                     <tr>
+                       <td>自动防眩目内后视镜</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>豪华电动天窗</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>全车车窗一键式升降/防夹</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>驾驶席车窗一键式升降/防夹</td>
+                       <td>-</td>
+                     </tr>
+                     <tr>
+                       <td>多级式前挡风玻璃雨刮器</td>
+                       <td>-</td>
+                     </tr>
+                     <tr>
+                       <td>雨量感应式雨刮器</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>豪华动感前中网</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>混合动力专属动感尾翼</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td colspan="2">内饰</td>
+                     </tr>
+                     <tr>
+                       <td>高级真皮座椅</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>真皮方向盘</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>双区自动空调</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>后排空调出风口</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>前排座椅中央扶手箱</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>后排座椅中央扶手</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>前排电加热座椅</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>后排电加热座椅</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>前排通风座椅</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>驾驶席10向电动调节（8向电动座椅+2向电动腰靠）</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>驾驶席8向电动调节</td>
+                       <td>-</td>
+                     </tr>
+                     <tr>
+                       <td>驾驶席6向手动调节</td>
+                       <td>-</td>
+                     </tr>
+                     <tr>
+                       <td>驾驶席座椅带记忆功能</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>副驾驶席8向电动调节</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>副驾驶席4向电动调节</td>
+                       <td>-</td>
+                     </tr>
+                     <tr>
+                       <td>前排遮阳板带照明灯</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>后排侧窗遮阳帘</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>后挡风玻璃遮阳帘</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>地图灯</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>阅读灯</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>手套箱灯</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>车内氛围灯</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>前排脚部氛围灯</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td colspan="2">舒适及便利装置</td>
+                     </tr>
+                     <tr>
+                       <td>SBW电子换档</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>等离子空气净化器</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>ANC主动降噪系统</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>单向远程发动机启动系统（同步开启空调）</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>Smart Entry智能无匙进入系统</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>一键启动系统</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>后行李箱智能开启</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>前排中央控制门锁</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>驾驶员信息系统</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td colspan="2">娱乐系统</td>
+                     </tr>
+                     <tr>
+                       <td>单碟CD音响系统</td>
+                       <td>-</td>
+                     </tr>
+                     <tr>
+                       <td>豪华7英寸彩色智能屏互联系统（蓝牙/手机导航/音乐功能）</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>8英寸彩色多用途信息显示系统</td>
+                       <td>-</td>
+                     </tr>
+                     <tr>
+                       <td>7.7英寸彩色多用途信息显示系统</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>Apple CarPlay</td>
+                       <td>-</td>
+                     </tr>
+                     <tr>
+                       <td>Honda CONNECT智导互联</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>Wi-Fi热点连接</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>环绕立体声高级音响系统</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>6扬声器高保真立体音响</td>
+                       <td>-</td>
+                     </tr>
+                     <tr>
+                       <td>7扬声器高保真立体音响</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>USB+AUX接口</td>
+                       <td>-</td>
+                     </tr>
+                     <tr>
+                       <td>后排USB充电接口</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>USB+HDMI接口</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>MP3/WMA播放器</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td>i-Pod播放功能（USB连接）</td>
+                       <td>●</td>
+                     </tr>
+                     <tr>
+                       <td colspan="2" style="text-align: center;">— 无此配置 ● 标准配置</td>
+                     </tr>
+                     <tr>
+                       <td colspan="2">备注：“●”表示装备、“-”表示未装备。*实际行驶油耗根据不同的燃油品质、道路状况和驾驶条件而定。</td>
+                     </tr>
+                     <tr>
+                       <td colspan="2">声明：本产品样本的全部内容，请以实车为准，广汽本田汽车有限公司保留最终解释权和修改权。</td>
+                     </tr>
+                  </table>
+                </div>
+                <!-- 锐尊版 end -->
+              </div>
+              <!-- table end -->
+            </div>
+          </div>
+          <div class="logo"></div>
+          <div class="menu" data-active="4"></div>
+          <div class="layout">
+            <div class="down"></div>
+            <div class="close"></div>
+          </div>
+        </div>
+        </script>
+        <!--第五屏结束-->
+        <!--第六屏开始-->
+        <script id="page9" type="text/template">
+        <div class="swiper-slide s6">
+          <div class="slide-box">
+            <div class="title"></div>
+            <div class="swiper-news">
+              <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="mobile/images/s6/1.jpg" alt="">
+                    <div class="t">好饭不怕晚 本田新雅阁 锐·混动试驾体验</div>
+                    <div class="d">昨天我们为您带来了雅阁锐·混动在设计与配置上的变化，今天我们将与您分享新车在动力操控方面的特点。</div>
+                    <a class="link" href="http://drive.xcar.com.cn/201609/news_1952425_1.html" onclick="javascript:ga('send', 'event', '201609-accordsporthybrid', 'Media', 'Article-1',{'dimension3': 'accord-sporthybrid', 'metric7': 1}); "></a>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="mobile/images/s6/2.jpg" alt="">
+                    <div class="t">1.5L的油耗 3.0L的动力 试驾新雅阁 锐·混动</div>
+                    <div class="d">作为20万元级的混动中级车，其搭载的i-MMD混动系统拥有215匹的综合功率，官方宣称油耗仅需4.2L/100km，性能指标堪称彪悍。</div>
+                    <a class="link" href="http://news.bitauto.com/drive/20160913/2306636498.html" onclick="javascript:ga('send', 'event', '201609-accordsporthybrid', 'Media', 'Article-2',{'dimension3': 'accord-sporthybrid', 'metric7': 1});"></a>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="mobile/images/s6/3.jpg" alt="">
+                    <div class="t">混动也玩性能 试驾广汽本田新雅阁 锐·混动</div>
+                    <div class="d">混合动力车型的价格跨度现在越来越大，入门级别的混动车型十几万就可以买，而高端混动普通人肯定消费不起。</div>
+                    <a class="link" href="http://www.autohome.com.cn/drive/201609/893046.html" onclick="javascript:ga('send', 'event', '201609-accordsporthybrid', 'Media', 'Article-3',{'dimension3': 'accord-sporthybrid', 'metric7': 1});"></a>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="mobile/images/s6/4.jpg" alt="">
+                    <div class="t">试驾广汽本田新雅阁 锐·混动 要熊掌亦要鱼</div>
+                    <div class="d">两全其美是人之所求，无奈现实中却缺受到种种制肘而难以实现，即使汽车中的豪华品牌也需要权衡操控与舒适。</div>
+                    <a class="link" href="http://www.pcauto.com.cn/pingce/875/8751433.html" onclick="ga('send', 'event', '201609-accordsporthybrid', 'Media', 'Article-4',{'dimension3': 'accord-sporthybrid', 'metric7': 1}); "></a>
+                  </div>
+              </div>
+            </div>
+            <div class="prev"></div>
+            <div class="next"></div>
+          </div>
+          <div class="logo"></div>
+          <div class="menu" data-active="5"></div>
+          <div class="layout">
+            <div class="down"></div>
+          </div>
+        </div>
+        </script>
+        <!--第六屏结束-->
+        <!--第七屏开始-->
+        <script id="page10" type="text/template">
+        <div class="swiper-slide s7">
+          <div class="slide-box">
+            <div class="title"></div>
+            <div class="form-data">
+              <form action="">
+                <div class="form-group">
+                  <input type="hidden" id="hdSeriesID" value="4374B1D6-6F2E-4892-AFC6-2B06E76248A0" />
+                  <input id="hdActivityCode" value="1-25750131" type="hidden" />
+                  <label for="realname">＊真实姓名：</label>
+                  <input type="text" class="form-control" placeholder="您的真实姓名" id="txtName" onclick="javascript:ga('send', 'pageview',    {'page': '/Layouts/Activity/2016/09/accord-sporthybrid/page7-2', 'title': '试驾留资',      'dimension3': 'accord-sporthybrid', 'metric8': 1});console.log('姓名')">
+                </div>
+                <div class="form-group">
+                  <label for="tel">＊联系方式：</label>
+                  <input type="text" class="form-control" placeholder="您的电话号码" id="txtMobile" onclick="javascript:ga('send', 'pageview',    {'page': '/Layouts/Activity/2016/09/accord-sporthybrid/page7-3', 'title': '试驾留资',      'dimension3': 'accord-sporthybrid', 'metric8': 1});console.log('手机号') ">
+                  <input type="text" placeholder="区号" class="three" id="txtArea">
+                  <input type="text" placeholder="座机号" class="three four" id="txtPhone" onclick="javascript:ga('send', 'pageview',    {'page': '/Layouts/Activity/2016/09/accord-sporthybrid/page7-3', 'title': '试驾留资',      'dimension3': 'accord-sporthybrid', 'metric8': 1});;console.log('电话号码')">
+                  <input type="text" placeholder="分机号" class="three" id="txtSubPhone">
+                  <label class="font-white">注：手机和座机可选填1项</label>
+                </div>
+                <div class="form-group">
+                  <label for="store">＊特约店查询：</label>
+                  <select name="" id="optProvince" onclick="javascript:ga('send', 'pageview',    {'page': '/Layouts/Activity/2016/09/accord-sporthybrid/page7-4', 'title': '试驾留资',      'dimension3': 'accord-sporthybrid', 'metric8': 1});console.log('城市')">
+
+                  </select>
+
+                  <select name="" id="optCity">
+
+                  </select>
+
+                  <select name="" id="optDealer">
+
+                  </select>
+          <div class="selectList" style="display: none"></div>
+                </div>
+                <button type="submit" id="btnSubmit" onclick="javascript:ga('send', 'pageview',{'page': '/Layouts/Activity/2016/09/accord-sporthybrid/page8', 'title': '试驾提交','dimension3': 'accord-sporthybrid', 'metric9': 1});ga('require', 'ecommerce');
+ga('ecommerce:addTransaction', {'id': GA_CookieID_OrderID});
+ga('ecommerce:addItem', {'id': GA_CookieID_OrderID, 'name': '雅阁', 'quantity': 1});ga('ecommerce:send');"></button>
+                <div class="text">
+                  <span>＊</span>为必填项，您的信息我们将会完全保密，请您放心填写。
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="logo"></div>
+          <div class="menu" data-active="6"></div>
+        </div>
+        </script>
+        <!--第七屏结束-->
+    </div>
+  </div>
+  
+  <div class="menu-layout">
+    <ul>
+      <li class="active" data-page="0">首页</li>
+      <li data-page="1" >技术卖点</li>
+      <li data-page="5" data-mpage="6" >车型外观</li>
+      <li data-page="6" data-mpage="7" ">车型内饰</li>
+      <li data-page="7" data-mpage="8" >参数配置</li>
+      <li data-page="8" data-mpage="9" >媒体声音</li>
+      <li data-page="9" data-mpage="10" >预约试驾</li>
+    </ul>
+    <div class="close"></div>
+  </div>
+
+  <div class="player">
+    <div class="close"></div>  
+    <div class="play-box">
+      <video src="" id="play"></video>
+    </div>
+  </div>
+
+  <div class="loading">
+      <div class="content">
+          <div class="text"></div>
+          <div class="head">
+            <div class="en"></div>
+            <div class="cn"></div>
+          </div>
+          <canvas id="process" width="200" height="200" data-process="85"></canvas>
+          <div class="info">加载中...</div>
+          <div class="number">0</div>
+      </div>
+  </div>
+  <script src="mobile/js/all.js"></script>
+  <script src="mobile/js/main.js"></script>
+
+</body>
+</html>

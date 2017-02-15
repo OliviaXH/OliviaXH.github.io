@@ -1,0 +1,34 @@
+body,  div,  p { margin: 0; padding: 0;}
+ul { list-style: none;}
+html { overflow: hidden;}
+body { width: 100%;*cursor: default;overflow: hidden; font: 16px/1.5 "Microsoft YaHei", Helvetica, STHeiti STXihei, Microsoft JhengHei, Arial;}
+
+p,
+img,
+h3,
+ul,
+li {
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	display: block;
+}
+
+ul {
+	list-style: none;
+}
+
+.fl {float: left;}
+
+.fr {float: right;}
+
+a:focus {outline: none;}
+
+.hide {display: none;}
+
+.hide_v {visibility: hidden;}
+.opcity{opacity: 0;}
+
+
